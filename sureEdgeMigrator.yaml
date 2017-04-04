@@ -1,0 +1,15 @@
+imports:
+- path: se_mc_template.jinja
+- path: se_store_template.jinja
+
+resources:
+- name: se_mc
+  type: se_mc_template.jinja
+  properties:
+    zone: us-central1-f
+
+- name: se_store
+  type: se_store_template.jinja
+  properties:
+    zone: us-central1-f
+    storesize: 1024
